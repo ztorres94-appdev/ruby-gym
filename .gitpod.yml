@@ -1,0 +1,14 @@
+image: jelaniwoods/appdev2021-ruby-gym@sha256:9e9392e2687e50f1000df1a77447da8beb4c7f284557cbb357af63d8dfdc30b2
+
+tasks:
+  - command: bundle install
+  - init: bin/setup
+ports:
+  - port: 3000
+    onOpen: open-preview
+
+vscode:
+  extensions:
+    - shd101wyy.markdown-preview-enhanced
+    - Vense.rails-snippets
+    - wingrunr21.vscode-ruby
