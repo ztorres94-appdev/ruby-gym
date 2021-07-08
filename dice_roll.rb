@@ -7,3 +7,13 @@
 # Hint: Use the `rand` method for the dice roll.
 
 p "Enter a guess:"
+
+guess = gets.chomp
+random = rand(1..6)
+
+if guess.to_i == random
+    p "You guessed correctly"
+else
+    p "Shame on you. The die landed on #{random}"
+end
+

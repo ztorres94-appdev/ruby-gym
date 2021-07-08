@@ -11,3 +11,14 @@
 # 16
 
 p "Enter at least 2 numbers, separated by spaces:"
+
+numbers = gets.chomp.split
+odd_array = Array.new
+
+numbers.each do |odds|
+    if odds.to_i.odd? 
+        odd_array.push(odds.to_i)
+    end
+end
+    p odd_array.sum
+

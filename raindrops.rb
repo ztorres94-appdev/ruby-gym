@@ -37,3 +37,24 @@
 
 
 p "Enter an integer"
+
+int = gets.chomp.to_i
+
+
+if int % 7.0 == 0 && int % 5.0 == 0 && int % 3.0 == 0
+    p "PlingPlangPlong"
+elsif int % 7.0 == 0 && int % 5.0 == 0
+    p "PlangPlong"
+elsif int % 7.0 == 0 && int % 3.0 == 0
+    p "PlingPlong"
+elsif int % 5.0 == 0 && int % 3.0 == 0
+    p "PlingPlang"
+elsif int % 7.0 == 0
+    p "Plong"
+elsif int % 5.0 == 0
+    p "Plang"
+elsif int % 3.0 == 0
+    p "Pling"
+else 
+    p int
+end

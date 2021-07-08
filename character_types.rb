@@ -14,3 +14,15 @@
 #  "Number of digits in the string is: 4"
 
 p "Enter a sentence:"
+
+sentance = gets.chomp
+
+digits = sentance.gsub(/[^0-9]/, "").split("").count
+letters = sentance.gsub(/[^a-z]/i, "").split("").count
+space = sentance.split("").count - sentance.gsub(/\s+/, "").split("").count
+
+p "Number of letters in the string is: #{letters}"
+p "Number of spaces in the string is: #{space}"
+p "Number of digits in the string is: #{digits}"
+
+
